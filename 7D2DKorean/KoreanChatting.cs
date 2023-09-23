@@ -13,6 +13,7 @@ namespace _7D2DKoreanChatting
 		[HarmonyTranspiler]
 		public static IEnumerable<CodeInstruction> Update_Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
+			Log.Out($"7D2DKoreanChatting::Start HarmonyTranspiler");
 			List<CodeInstruction> source = new List<CodeInstruction>(instructions);
 			List<CodeInstruction> codeInstructionList = new List<CodeInstruction>(instructions);
 			for (int i = 0; i < codeInstructionList.Count; i++)
@@ -21,12 +22,13 @@ namespace _7D2DKoreanChatting
 				{
 					for (int j = 0; j < 3; j++)
 					{
-						Log.Out($"<------------ Deleted opcode ::: {codeInstructionList[i + j].opcode.ToString()} ------------>");
+						Log.Out($"7D2DKoreanChatting::Delete opcode '{codeInstructionList[i + j].opcode.Name}'");
 						codeInstructionList[i + j].opcode = OpCodes.Nop;
 					}
 					break;
 				}
 			}
+			Log.Out($"7D2DKoreanChatting::End HarmonyTranspiler");
 			return source.AsEnumerable();
 		}
 	}

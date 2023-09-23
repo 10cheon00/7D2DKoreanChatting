@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using System.Reflection;
 
-namespace UnlimitedParty
+namespace _7D2DKoreanChatting
 {
 	public class Main : IModApi
 	{
