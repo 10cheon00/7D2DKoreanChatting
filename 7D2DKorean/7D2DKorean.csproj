@@ -41,15 +41,18 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\0Harmony.dll</HintPath>
+      <HintPath>G:\SteamLibrary\steamapps\common\7 Days To Die\Mods\0_TFP_Harmony\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>G:\SteamLibrary\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="LogLibrary, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\LogLibrary.dll</HintPath>
+      <HintPath>G:\SteamLibrary\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\LogLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="NGUI">
+      <HintPath>G:\SteamLibrary\steamapps\common\7 Days To Die\7DaysToDie_Data\Managed\NGUI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
